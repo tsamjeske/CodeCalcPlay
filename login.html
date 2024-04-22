@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+ .navigation_bar{
+        margin-left: -40px !important;
+
+    }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles_login.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script_Login.js" defer></script>
+</head>
+<body>
+    <header class="top-header">    
+        <nav class="navigation_bar">
+        <div class="nav_logo"></div>
+        <img src="logo.png" class="nav_logo logo_top_left">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-container">
+            <ul>
+                <li><a href="startseite.html">Startseite</a></li>
+                <li><a href="#">Über-mich</a>
+                    <ul>
+                        <li><a href="#">Bildungsweg</a></li>
+                        <li><a href="#">Erfahrungen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="account-erstellen.html">Account-Erstellen</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tools</a>
+                    <ul>
+                        <li><a href="passowort-generator.html">Passwort-Generator</a></li>
+                        <li><a href="taschenrechner.html">Taschenrechner</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Extras</a>
+                    <ul>
+                        <li><a href="#">Wetter</a></li>
+                        <li><a href="#">Bitcoin Kurs</a></li>
+                        <li><a href="#">Impressum</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>        
+    </header>
+    <form id="form" autocomplete="off">
+        <h1>Login</h1>
+        <input id="Benutzername_input" type="Benutzername" placeholder="Benutzername" > 
+        <input id="password_input" type="password" placeholder="Passwort" >       
+        <div id="message-container"></div>
+        <button>Einreichen</button>
+    </form>
+</body>
+</html>

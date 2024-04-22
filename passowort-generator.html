@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Passwort-Generator</title>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="script.js" defer></script>
+<style>
+body {
+font-family: 'Arial', sans-serif;
+background-color: #282c34; 
+color: #ffffff; 
+margin: 0;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+h1 {
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin: 10px 0;
+}
+input[type="number"],
+input[type="text"] {
+padding: 10px;
+margin-bottom: 20px;
+border: none; 
+border-radius: 4px;
+background-color: #333645; 
+color: #ffffff; 
+width: 250px; 
+}
+input[type="text"][readonly] {
+background-color: #1e2129; 
+cursor: not-allowed;
+}
+button {
+padding: 10px 20px;
+background-color: #6441a5;
+border: none;
+border-radius: 4px;
+color: white;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+width: 274px; 
+}
+button:hover {
+background-color: #503383; 
+}   
+  .top-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333645;
+}
+.nav_logo{
+color: #272727;
+
+}
+.navigation_bar{
+        margin-left: -40px !important;
+
+    }
+</style>
+</head>
+<body>
+
+    <header class="top-header">    
+        <nav class="navigation_bar">
+        <div class="nav_logo"></div>
+        <img src="logo.png" class="nav_logo logo_top_left">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-container">
+            <ul>
+                <li><a href="startseite.html">Startseite</a></li>
+                <li><a href="#">Über-mich</a>
+                    <ul>
+                        <li><a href="#">Bildungsweg</a></li>
+                        <li><a href="#">Erfahrungen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="account-erstellen.html">Account-Erstellen</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tools</a>
+                    <ul>
+                        <li><a href="passowort-generator.html">Passwort-Generator</a></li>
+                        <li><a href="taschenrechner.html">Taschenrechner</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Extras</a>
+                    <ul>
+                        <li><a href="#">Wetter</a></li>
+                        <li><a href="#">Bitcoin Kurs</a></li>
+                        <li><a href="#">Impressum</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>        
+    </header>
+    <h1>Passwort-Generator</h1>
+    <label for="length">Passwortlänge:</label>
+    <input type="number" id="length" value="12" min="1" max="100">
+    <button onclick="generatePassword()">Passwort generieren</button>
+    <input type="text" id="password" readonly>
+</body>
+<script>
+    function generatePassword() {
+        var length = document.getElementById("length").value;
+        var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&()_+'°<>|-.,;:";
+        var password = "";
+        for (var i = 0; i < length; i++) {
+            var randomIndex = Math.floor(Math.random()*charset.length);
+            password += charset[randomIndex];
+        }
+        document.getElementById("password").value = password;
+    }
+</script>
+</html>
