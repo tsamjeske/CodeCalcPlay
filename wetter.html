@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+    <style>
+.navigation_bar{
+        margin-left: -40px !important;
+    }
+
+    #weather {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 50px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCalcPlay</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navigation_bar">
+        <div class="nav_logo"></div>
+        <img src="logo.png" class="nav_logo logo_top_left">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-container">
+            <ul>
+                <li><a href="startseite.html">Startseite</a></li>
+                <li><a href="#">Über-mich</a>
+                    <ul>
+                        <li><a href="#">Bildungsweg</a></li>
+                        <li><a href="#">Erfahrungen</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="account-erstellen.html">Account-Erstellen</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tools</a>
+                    <ul>
+                        <li><a href="passowort-generator.html">Passwort-Generator</a></li>
+                        <li><a href="taschenrechner.html">Taschenrechner</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Extras</a>
+                    <ul>
+                        <li><a href="#">Wetter</a></li>
+                        <li><a href="#">Bitcoin Kurs</a></li>
+                        <li><a href="#">Impressum</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="weather">Lade Wetterdaten...</div>
+
+    <script>
+        const apiKey = '658a641ac8505bfb100c4c3da4941e80';
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=${apiKey}&units=metric&lang=de`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const weatherInfo = `Aktuelle Temperatur in Berlin: ${data.main.temp}°C, ${data.weather[0].description}`;
+                document.getElementById('weather').innerText = weatherInfo;
+            })
+            .catch(error => console.error('Fehler beim Abrufen der Wetterdaten:', error));
+    </script>
+</body>
+</html>
