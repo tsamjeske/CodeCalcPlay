@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
- .navigation_bar{
-        margin-left: -40px !important;
-
-    }
-    </style>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles_login.css">
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script_Login.js" defer></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Startseite</title>
+ <link rel="stylesheet" href="styles.css">
+ <style>
+.iframe{
+position: absolute;
+top: 20%;
+left: 30%;
+}
+ </style>
 </head>
 <body>
+    <iframe class="iframe"
+    height="700"
+    width="700"
+    src="https://pacman.at/">
+    </iframe>
     <header class="top-header">    
         <nav class="navigation_bar">
         <div class="nav_logo"></div>
@@ -47,7 +51,7 @@
                 </li>
                 <li><a href="#">Extras</a>
                     <ul>
-                        <li><a href="#">Mini-Game</a></li>
+                        <li><a href="mini-game.html">Mini-Game</a></li>
                         <li><a href="wetter.html">Wetter</a></li>
                         <li><a href="krypto.html">Krypto Kurse</a></li>
                         <li><a href="#">Impressum</a></li>
@@ -57,12 +61,5 @@
         </div>
     </nav>        
     </header>
-    <form id="form" autocomplete="off">
-        <h1>Login</h1>
-        <input id="Benutzername_input" type="Benutzername" placeholder="Benutzername" > 
-        <input id="password_input" type="password" placeholder="Passwort" >       
-        <div id="message-container"></div>
-        <button>Einreichen</button>
-    </form>
 </body>
 </html>

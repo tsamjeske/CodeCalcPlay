@@ -1,21 +1,152 @@
 <!DOCTYPE html>
-<html lang="de">
-    <style>
-.navigation_bar{
-        margin-left: -40px !important;
-
-    }
-    </style>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeCalcPlay</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js" defer></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Startseite</title>
+ <link rel="stylesheet" href="styles.css">
+ <script type="text/javascript" src="script.js" defer></script>
+ <style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34; 
+    color: #ffffff; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    }
+    h1 {
+    margin-bottom: 20px;
+    }
+    label {
+    display: block;
+    margin: 10px 0;
+    }
+    input[type="number"],
+    input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none; 
+    border-radius: 4px;
+    background-color: #333645; 
+    color: #ffffff; 
+    width: 250px; 
+    }
+    input[type="text"][readonly] {
+    background-color: #1e2129; 
+    cursor: not-allowed;
+    }
+    button {
+    padding: 10px 20px;
+    background-color: #6441a5;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 274px; 
+    }
+    button:hover {
+    background-color: #503383; 
+    }   
+      .top-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #333645;
+    }
+    .nav_logo{
+    color: #272727;
+    }
+    .navigation_bar{
+        margin-left: -40px !important;
+    }
+    .text-container{
+    position: absolute;
+    font-family: 'Arial', sans-serif;
+    }
+    .left-container{
+    position: absolute;
+    margin-left: -59%;
+    font-size: xx-large;
+    font-family: 'Arial', sans-serif;
+    }
+    .top-container{
+    position: absolute;
+    font-family: 'Arial', sans-serif;
+    }
+    .left-container2{
+    position: absolute;
+    margin-left: -58%;
+    font-size: large;
+    font-family: 'Arial', sans-serif;
+    }
+    .right-container{
+    position: absolute;
+    margin-left: 59%;
+    font-size: xx-large;
+    font-family: 'Arial', sans-serif;
+    }
+    .right-container2{
+    position: absolute;
+    margin-left: 56%;
+    font-size: large;
+    font-family: 'Arial', sans-serif;
+    }
+    .header-image{
+    height:100vh;
+    width: 100%;
+    object-fit: cover;
+    }
+ </style>
 </head>
-<body>
-    <nav class="navigation_bar">
+<body> 
+    <img class="header-image" src="tech-image.jpg"> 
+    <h1 style="margin-top: 10%;" class="text-container">
+        Willkommen bei CodeCalcPlay
+    </h1>
+    <h2 style="margin-top: 20%;" class="left-container">
+        <p>
+        Willkommen auf meiner Projektseite <br>
+        für die Bewerbung zum Fachinformatiker <br>
+        für Anwendungsentwicklung! <br>
+        </p>
+    </h2>
+    <h3 style="margin-top: 13%;" class="top-container">
+        Besuchen Sie meine Website, um mehr über mich und meine kleinen Webentwicklungsprojekte zu erfahren.
+    </h3>
+    <h4 style="margin-top: 27%;" class="left-container2">
+        <p>
+        Hallo und herzlich willkommen! Diese Seite ist ein Teil <br>
+        meiner Bewerbung zum Fachinformatiker für Anwendungsentwicklung. <br>
+        Ich präsentiere hier meine Fähigkeiten und Kenntnisse in HTML, JavaScript <br>
+        und CSS. Durchsuchen Sie meine Arbeiten und erfahren <br>
+        Sie mehr über meine bisherigen Projekte und Erfahrungen. <br>
+
+        Vielen Dank für Ihren Besuch!
+        </p>
+    </h4>
+    <h5 style="margin-top: 20%;" class="right-container">
+        <p>
+        Entdecken Sie meine bisherigen Erfahrungen <br>
+        und privaten Projekte
+        </p>
+    </h5>
+    <h6 style="margin-top: 27%;" class="right-container2">
+        <p>
+        Hier liegt der Schwerpunkt darauf, meine bisherigen Erfahrungen <br>
+        und privaten Projekte im Bereich der Webentwicklung zu präsentieren. <br>
+        Ich lade Sie ein, einen Blick auf meine Portfolio-Seite zu werfen, um <br>
+        mehr über meine bisherigen Arbeiten zu erfahren und einen Eindruck von <br>
+        meinen Fähigkeiten zu gewinnen. 
+        </p>
+    </h6>
+    <header class="top-header">    
+        <nav class="navigation_bar">
         <div class="nav_logo"></div>
         <img src="logo.png" class="nav_logo logo_top_left">
         <a href="#" class="toggle-button">
@@ -25,7 +156,7 @@
         </a>
         <div class="list-container">
             <ul>
-                <li><a href="startseite.html">Startseite</a></li>
+                <li><a href="index.html">Startseite</a></li>
                 <li><a href="#">Über-mich</a>
                     <ul>
                         <li><a href="#">Bildungsweg</a></li>
@@ -46,13 +177,15 @@
                 </li>
                 <li><a href="#">Extras</a>
                     <ul>
-                        <li><a href="#">Wetter</a></li>
-                        <li><a href="#">Bitcoin Kurs</a></li>
+                        <li><a href="mini-game.html">Mini-Game</a></li>
+                        <li><a href="wetter.html">Wetter</a></li>
+                        <li><a href="krypto.html">Krypto Kurse</a></li>
                         <li><a href="#">Impressum</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav>        
+    </header>
 </body>
 </html>
