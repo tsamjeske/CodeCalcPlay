@@ -12,7 +12,6 @@
     background-color: #282c34; 
     color: #ffffff; 
     margin: 0;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,18 +66,20 @@
         margin-left: -40px !important;
     }
     .header-image{
-    height:50vh;
-    width: 70%;
+    height:100vh;
+    width: 100%;
     object-fit: cover;
-
+    }
+    .text-container{
+    position: absolute;
     }
  </style>
 </head>
 <body>
-    <h1 style="margin-top: 10%;">
+    <img class="header-image" src="tech-image.jpg">
+    <h1 style="margin-top: 10%;" class="text-container">
         Willkommen bei CodeCalcPlay
     </h1>
-    <img class="header-image" src="tech-image.jpg">
     <header class="top-header">    
         <nav class="navigation_bar">
         <div class="nav_logo"></div>
@@ -90,7 +91,7 @@
         </a>
         <div class="list-container">
             <ul>
-                <li><a href="startseite.html">Startseite</a></li>
+                <li><a href="index.html">Startseite</a></li>
                 <li><a href="#">Über-mich</a>
                     <ul>
                         <li><a href="#">Bildungsweg</a></li>
@@ -112,8 +113,8 @@
                 <li><a href="#">Extras</a>
                     <ul>
                         <li><a href="#">Mini-Game</a></li>
-                        <li><a href="#">Wetter</a></li>
-                        <li><a href="#">Bitcoin Kurs</a></li>
+                        <li><a href="wetter.html">Wetter</a></li>
+                        <li><a href="krypto.html">Krypto Kurse</a></li>
                         <li><a href="#">Impressum</a></li>
                     </ul>
                 </li>

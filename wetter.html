@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <style>
- .navigation_bar{
+.navigation_bar{
         margin-left: -40px !important;
-
     }
     </style>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles_login.css">
+    <title>CodeCalcPlay</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script_Login.js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="wetter_styles.css">
 </head>
 <body>
-    <header class="top-header">    
-        <nav class="navigation_bar">
+    <nav class="navigation_bar">
         <div class="nav_logo"></div>
         <img src="logo.png" class="nav_logo logo_top_left">
         <a href="#" class="toggle-button">
@@ -55,14 +55,20 @@
                 </li>
             </ul>
         </div>
-    </nav>        
-    </header>
-    <form id="form" autocomplete="off">
-        <h1>Login</h1>
-        <input id="Benutzername_input" type="Benutzername" placeholder="Benutzername" > 
-        <input id="password_input" type="password" placeholder="Passwort" >       
-        <div id="message-container"></div>
-        <button>Einreichen</button>
-    </form>
+    </nav>
+    <div id="weather-container">
+        <h2>Wetter</h2>
+        <input type="text" id="city" placeholder="Stadt eingeben">
+        <button onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+    </div>
+    <script src="./wetter_script.js"></script>
 </body>
 </html>
