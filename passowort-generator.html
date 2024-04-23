@@ -5,6 +5,12 @@
 <link rel="stylesheet" href="styles.css">
 <script type="text/javascript" src="script.js" defer></script>
 <style>
+.calculator {
+width: 270px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
 body {
 font-family: 'Arial', sans-serif;
 background-color: #282c34; 
@@ -16,11 +22,14 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 height: 100vh;
+background-image: url("abstrakte-hintergrunddesignbilder-hintergrundbild-von-ai-generiert_643360-179733.avif");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }
 h1 {
 margin-bottom: 20px;
 }
-
 label {
 display: block;
 margin: 10px 0;
@@ -48,7 +57,7 @@ color: white;
 cursor: pointer;
 font-size: 16px;
 transition: background-color 0.3s ease;
-width: 274px; 
+width: 270px; 
 }
 button:hover {
 background-color: #503383; 
@@ -67,7 +76,7 @@ color: #272727;
 .navigation_bar{
         margin-left: -40px !important;
 
-    }
+}
 </style>
 </head>
 <body>
@@ -86,8 +95,8 @@ color: #272727;
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="#">Über-mich</a>
                     <ul>
-                        <li><a href="#">Bildungsweg</a></li>
-                        <li><a href="#">Erfahrungen</a></li>
+                        <li><a href="bildungsweg.html">Bildungsweg</a></li>
+                        <li><a href="erfahrungen.html">Erfahrungen</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Account</a>
@@ -104,21 +113,24 @@ color: #272727;
                 </li>
                 <li><a href="#">Extras</a>
                     <ul>
-                        <li><a href="#">Mini-Game</a></li>
+                        <li><a href="mini-game.html">Mini-Game</a></li>
                         <li><a href="wetter.html">Wetter</a></li>
                         <li><a href="krypto.html">Krypto Kurse</a></li>
-                        <li><a href="#">Impressum</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>        
     </header>
+    
     <h1>Passwort-Generator</h1>
+    <div class="calculator">
     <label for="length">Passwortlänge:</label>
     <input type="number" id="length" value="12" min="1" max="100">
     <button onclick="generatePassword()">Passwort generieren</button>
     <input type="text" id="password" readonly>
+    </div>
 </body>
 <script>
     function generatePassword() {
