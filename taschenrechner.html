@@ -3,93 +3,8 @@
 <head>
 <title>Taschenrechner</title>
 <link rel="stylesheet" href="styles.css">
-<script type="text/javascript" src="script.js" defer></script>
-    <style>
-        .calculator {
-            width: 250px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .calculator input {
-            width: 100%;
-            margin-bottom: 5px;
-            padding: 5px;
-            box-sizing: border-box;
-        }
-        body {
-font-family: 'Arial', sans-serif;
-background-color: #282c34; 
-color: #ffffff; 
-margin: 0;
-padding: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 100vh;
-margin: 0;
-background-image: url("abstrakte-hintergrunddesignbilder-hintergrundbild-von-ai-generiert_643360-179733.avif");
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-}
-h1 {
-margin-bottom: 20px;
-}
-
-label {
-display: block;
-margin: 10px 0;
-}
-input[type="number"],
-input[type="text"] {
-padding: 10px;
-margin-bottom: 20px;
-border: none; 
-border-radius: 4px;
-background-color: #333645; 
-color: #ffffff; 
-width: 250px; 
-}
-input[type="text"][readonly] {
-background-color: #1e2129; 
-cursor: not-allowed;
-}
-button {
-padding: 2px;
-background-color: #6441a5;
-border: 1px solid;
-border-radius: 5px;
-color: white;
-cursor: pointer;
-font-size: 16px;
-transition: background-color 0.3s ease;
-width: 100% !important; 
-}
-.buttons{
- display: grid;
- grid-template-columns: repeat(4, 1fr);
- grid-gap: 5px
-} 
-button:hover {
-background-color: #503383; 
-}   
-  .top-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #333645;
-}
-.nav_logo{
-color: #272727;
-}
-.navigation_bar{
-        margin-left: -40px !important;
-
-    }
-    </style>
+<link rel="stylesheet" href="taschenrechner.css">
+<script type="text/javascript" src="taschenrechner_script.js" defer></script>
 </head>
 <body>
     <h1>Taschenrechner</h1> 
@@ -157,25 +72,5 @@ color: #272727;
             <button onclick="appendToResult('/')">/</button>
         </div>
     </div>
-
-    <script>
-        function appendToResult(value) {
-            document.getElementById("result").value += value;
-        }
-
-        function clearResult() {
-            document.getElementById("result").value = "";
-        }
-
-        function calculateResult() {
-            var result = document.getElementById("result").value;
-            try {
-                var finalResult = eval(result);
-                document.getElementById("result").value = finalResult;
-            } catch (error) {
-                alert("Ung체ltiger Ausdruck!");
-            }
-        }
-    </script>
 </body>
 </html>

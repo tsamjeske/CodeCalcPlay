@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+} 
+form {
+    text-align: center !important;
+    width: 300px;
+    margin-left: 40%;
+  }
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.textbox {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #1e2129;
+    color: #fff;
+    font-size: 1rem;
+}
+::placeholder {
+    color: #bbb;
+  }
+.textbox:hover, .textbox:focus {
+    border-color: #6441a5;
+}   
+.top-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333645;
+}
+body {
+padding-top: 300px;
+margin: 0;
+background-image: url("abstrakte-hintergrunddesignbilder-hintergrundbild-von-ai-generiert_643360-179733.avif");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+button {
+padding: 10px 20px;
+background-color: #6441a5;
+border: none;
+border-radius: 4px;
+color: white;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+width: 274px; 
+}
+button:hover {
+background-color: #503383; 
+}  
+.navigation_bar{
+        margin-left: -40px !important;
+
+} 
+form{
+    height: 550px;
+    width: 550px;
+
+    background-color: #222831;
+    box-shadow: -15px -15px 0px 23px inset #503383;
+
+    position: absolute;
+    top: 60%;
+    left:10.5%;
+    transform: translate(-50%,-50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
