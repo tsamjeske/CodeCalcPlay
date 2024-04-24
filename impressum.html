@@ -3,103 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account-Erstellen</title>
+    <title>Impressum</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js" defer></script>
-    <style>
-        body {
-    font-family: 'Arial', sans-serif;
-    background-color: #282c34;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-  } 
-  form {
-    text-align: center !important;
-    width: 300px;
-    margin-left: 40%;
-  }
-  h1 {
-    color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .textbox {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    border: 1px solid #333;
-    background-color: #1e2129;
-    color: #fff;
-    font-size: 1rem;
-  }
-  ::placeholder {
-    color: #bbb;
-  }
-  .textbox:hover, .textbox:focus {
-    border-color: #6441a5;
-  }   
-  .top-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #333645;
+</head>
+<style>
+.navigation_bar{
+margin-left: -40px !important;
 }
+.title{
+position: absolute;
+margin-left: 40%;
+color: white;
+font-family: 'Arial', sans-serif;
+font-size: xx-large;
+}
+.title2{
+position: absolute;
+margin-left: 40%;
+color: white;
+font-family: 'Arial', sans-serif;
+font-size: x-large;
+}
+.title3{
+position: absolute;
+margin-left: 40%;
+color: white;
+font-family: 'Arial', sans-serif;
+font-size: x-large;
+}
+.iframe{
+position: absolute;
+top: 41.5%;
+left: 52%;
+}
+
 body {
-padding-top: 300px;
 margin: 0;
+padding: 0;
 background-image: url("abstrakte-hintergrunddesignbilder-hintergrundbild-von-ai-generiert_643360-179733.avif");
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
 }
-button {
-padding: 10px 20px;
-background-color: #6441a5;
-border: none;
-border-radius: 4px;
-color: white;
-cursor: pointer;
-font-size: 16px;
-transition: background-color 0.3s ease;
-width: 274px; 
-}
-button:hover {
-background-color: #503383; 
-}  
-.navigation_bar{
-        margin-left: -40px !important;
-
-} 
-form{
-    height: 550px;
-    width: 550px;
-
-    background-color: #222831;
-    box-shadow: -15px -15px 0px 23px inset #503383;
-
-    position: absolute;
-    top: 60%;
-    left:10.5%;
-    transform: translate(-50%,-50%);
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-}
 </style>
-</head>
 <body>
+    <iframe class="iframe"
+    height="200"
+    width="300"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.0392107527205!2d7.147527176897394!3d51.45743651435172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8de199f5ec265%3A0xba191610ecb8f05f!2sHorneburg%2046%2C%2044869%20Bochum!5e0!3m2!1sde!2sde!4v1713805827033!5m2!1sde!2sde">
+    </iframe>
+    <h1 style="margin-top: 15%;" class="title">
+        Impressum Tobias Samjeske
+    </h1>
+    <h2 style="margin-top: 22%;" class="title2">
+        <p>
+            Tobias Samjeske <br>
+            Horneburg 46 <br>
+            44869 Bochum <br>
+            Deutschland <br>
+        </p>
+    </h2>
+    <h3 style="margin-top: 33%;" class="title3">
+        <p>
+            Kontakt <br>
+            Telefon: 015758421643 <br>
+            E-Mail: t.samjeske@gmail.com <br>
+        </p>
+    </h3>
     <header class="top-header">    
         <nav class="navigation_bar">
         <div class="nav_logo"></div>
@@ -142,16 +112,5 @@ form{
         </div>
     </nav>        
     </header>
-    <form>
-        <div class="input_container" style="text-align: center;"> 
-          <h1>Account Erstellen</h1>
-          <ul>
-                <li><input type="text" class="textbox" placeholder="Benutzername"/></li>
-                <li><input type="text" class="textbox" placeholder="Email"/></li>
-                <li><input type="password" class="textbox" placeholder="Passwort"/></li>
-                <li><button>Erstellen</button> </li>
-          </ul>
-        </div>
-    </form> 
 </body>
 </html>
