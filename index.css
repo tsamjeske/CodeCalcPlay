@@ -7,16 +7,16 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    }
-    h1 {
+}
+h1 {
     margin-bottom: 20px;
-    }
-    label {
+}
+label {
     display: block;
     margin: 10px 0;
-    }
-    input[type="number"],
-    input[type="text"] {
+}
+input[type="number"],
+input[type="text"] {
     padding: 10px;
     margin-bottom: 20px;
     border: none; 
@@ -24,12 +24,12 @@ body {
     background-color: #333645; 
     color: #ffffff; 
     width: 250px; 
-    }
+}
     input[type="text"][readonly] {
     background-color: #1e2129; 
     cursor: not-allowed;
-    }
-    button {
+}
+button {
     padding: 10px 20px;
     background-color: #6441a5;
     border: none;
@@ -39,60 +39,60 @@ body {
     font-size: 16px;
     transition: background-color 0.3s ease;
     width: 274px; 
-    }
+}
     button:hover {
     background-color: #503383; 
-    }   
-      .top-header {
+}   
+.top-header {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       background-color: #333645;
-    }
-    .nav_logo{
+}
+.nav_logo{
     color: #272727;
-    }
-    .navigation_bar{
+}
+.navigation_bar{
         margin-left: -40px !important;
-    }
-    .text-container{
+}
+.text-container{
     position: absolute;
     font-family: 'Arial', sans-serif;
     text-shadow: 3px 1px rgba(0,0,0,0.8);
-    }
-    .left-container{
+}
+.left-container{
     position: absolute;
     margin-left: -74%;
     font-size: x-large;
     font-family: 'Arial', sans-serif;
     text-shadow: 3px 1px rgba(0,0,0,0.8);
-    }
-    .top-container{
+}
+.top-container{
     position: absolute;
     font-family: 'Arial', sans-serif;
-    }
-    .left-container2{
+}
+.left-container2{
     position: absolute;
     margin-left: -67%;
     font-size: large;
     font-family: 'Arial', sans-serif;
-    }
-    .right-container{
+}
+.right-container{
     position: absolute;
     margin-left: 63%;
     font-size: x-large;
     font-family: 'Arial', sans-serif;
     text-shadow: 3px 1px rgba(0,0,0,0.8);
     
-    }
-    .right-container2{
+}
+.right-container2{
     position: absolute;
     margin-left: 66%;
     font-size: large;
     font-family: 'Arial', sans-serif;
-    }
-    .body-image{
+}
+.body-image{
     height:450px;
     width: 600px;
     object-fit: cover;
@@ -101,10 +101,10 @@ body {
     left: 33%;
 }
 body {
-margin: 0;
-padding: 0;
-background-image: url("abstrakte-hintergrunddesignbilder-hintergrundbild-von-ai-generiert_643360-179733.avif");
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  background-image: url("abstrakte-hintergrunddesignbilder-hintergrundbild-von-ai-generiert_643360-179733.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
