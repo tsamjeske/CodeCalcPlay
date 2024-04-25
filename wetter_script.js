@@ -3,7 +3,7 @@ function getWeather() {
     const city = document.getElementById('city').value;
 
     if (!city) {
-        alert('Please enter a city');
+        alert('Bitte Stadt eingeben');
         return;
     }
 
@@ -16,8 +16,8 @@ function getWeather() {
             displayWeather(data);
         })
         .catch(error => {
-            console.error('Error fetching current weather data:', error);
-            alert('Error fetching current weather data. Please try again.');
+            console.error('Fehler beim Abrufen der aktuellen Wetterdaten:', error);
+            alert('Fehler beim Abrufen der aktuellen Wetterdaten. Bitte versuche es erneut.');
         });
 
     fetch(forecastUrl)
@@ -26,8 +26,8 @@ function getWeather() {
             displayHourlyForecast(data.list);
         })
         .catch(error => {
-            console.error('Error fetching hourly forecast data:', error);
-            alert('Error fetching hourly forecast data. Please try again.');
+            console.error('Fehler beim Abrufen der stündlichen Prognosedaten:', error);
+            alert('Fehler beim Abrufen der stündlichen Prognosedaten. Bitte versuche es erneut.');
         });
 }
 
@@ -37,7 +37,6 @@ function displayWeather(data) {
     const weatherIcon = document.getElementById('weather-icon');
     const hourlyForecastDiv = document.getElementById('hourly-forecast');
 
-    // Clear previous content
     weatherInfoDiv.innerHTML = '';
     hourlyForecastDiv.innerHTML = '';
     tempDivInfo.innerHTML = '';
