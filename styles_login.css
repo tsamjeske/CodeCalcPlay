@@ -1,3 +1,16 @@
+.navigation_bar{
+    margin-left: -40px !important;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("abstrakte-hintergrunddesignbilder-hintergrundbild-von-ai-generiert_643360-179733.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 html{
     height: 100%;
 }
@@ -33,20 +46,21 @@ input{
     width: 190px;
     margin: 10px;
     padding: 0 20px;
-
     border: none;
     border-radius: 1000px;
     background-color: #373e49;
     color: white;
     font-size: 18px;
-
     transition: 0.3s;
+    border: 1px solid;
 }
 input::placeholder{
     color: rgba(255, 255, 255, 0.534);
 }
 input:hover{
     background-color: #414857;
+    width: 220px;
+    border-color: #6441a5;
 }
 input:focus{
     outline: none;
@@ -57,16 +71,17 @@ button{
     height: 50px;
     width: 100px;
     margin-top: 20px;
-
     background-color: #503383;
     color: white;
     font-size: 17px;
     border: none;
     border-radius: 1000px;
     transition: 0.3s;
+    border: 1px solid;
 }
 button:hover{
-    width: 135px;   
+    width: 135px; 
+    border-color: #6441a5;   
 }
 button:focus{
     outline: none;

@@ -51,21 +51,21 @@ button {
     font-size: 16px;
     transition: background-color 0.3s ease;
     width: 270px; 
+    border: 1px solid;
 }
 button:hover {
     background-color: #503383; 
 }   
 .top-header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: #333645;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333645;
 }
 .nav_logo{
     color: #272727;
 }
 .navigation_bar{
-    margin-left: -40px !important;
-    
+    margin-left: -40px !important;   
 }
